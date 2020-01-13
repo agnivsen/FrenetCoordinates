@@ -32,9 +32,9 @@ The program developed here derived the Frenet coordinates with some assumptions.
 
 # Brief Description
 The algorithm works using the following steps
-1. Given a set of input points, it fits a second order polynomial to the points
+1. Given a set of input points, it fits a second order polynomial to the points (Eigen is used for this)
 2. From the input target point (for which the Frenet coordinate is to be determied), it finds the closest waypoint (from the input data). However, this closest waypoint is not guaranteed to be the closest points on the curve from the target
-3. A steepest gradient descent method is used to arrive at the actual closest point, starting from the initial estimate derived in step 2
+3. A steepest gradient descent method is used to arrive at the actual closest point, starting from the initial estimate derived in step 2 (implemented from scratch)
 4. The distance of the closest point derived in step 3 to the target should be along the normal to the curve. The orientation of the target w.r.t the curve is derived by a cross product with the vector along the direction of motion
 
 
