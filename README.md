@@ -1,4 +1,4 @@
-# IVEX - Frenet Coordinates
+# Frenet Coordinates
 This project converts a point from cartesian coordinates to its equivalent representation in Frenet coordinate system, given a set of input points describing the waypoints of a curve traced out by a hypothetical mobile vehicle/robot.
 
 # Software
